@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "cb-cloner"
+version = "0.1.0"
+description = "Clone CodeBasics ru lessons to en"
+authors = ["Artyom Kropp <artyomkropp@gmail.com>"]
+readme = "README.md"
+packages = [{include = "cb_cloner"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+argparse = "^1.4.0"
+
+[tool.poetry.scripts]
+ru-to-en = 'cb_cloner.scripts.cb_cloner:main'
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
