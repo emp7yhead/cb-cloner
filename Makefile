@@ -1,4 +1,4 @@
-DIR ?= 'code-basics/exercises-python/'
+DIR ?= ''
 
 install:
 	poetry install
